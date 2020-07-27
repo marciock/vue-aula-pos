@@ -5,7 +5,7 @@
         <div class="col-sm-3">
           <AlertButton /> <br> <MessageButton message="Oi Imundo!!!!" titleButton="Oi" />
           <br> <MessageButton message="Hello Kit" titleButton="Hello"/>
-          <br> <TextButton titleButton="Insere"  message="EStou escrevendo um texto" @texto="escrever" />
+          <br> <TextButton titleButton="Insere"  message="EStou escrevendo um texto" @texto="escrever"  />
         </div>
       </div>
       <div class="row">
@@ -13,9 +13,14 @@
           <strong>{{meuTexto.text}}</strong>
         </div>
       </div>
+      
         <CustomList />     
         <ViewPass label="Senha" />    
+        
+         <ListFruits />
+        
       </div>
+       
       
       
   </div>
@@ -31,11 +36,11 @@ import MessageButton from './components/MessageButton';
 import TextButton from './components/TextButton';
 import CustomList from './components/CustomList';
 import ViewPass from './components/ViewPass';
-
+import ListFruits from './components/ListFruits';
 export default {
   name: 'App',
   components: {
-    AlertButton,MessageButton,TextButton,CustomList,ViewPass
+    AlertButton,MessageButton,TextButton,CustomList,ViewPass,ListFruits
   },
   data:()=>{
     return{
